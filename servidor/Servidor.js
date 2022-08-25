@@ -13,7 +13,7 @@ export class Servidor{
     constructor(){
         this.app = express() //atributo una variable
         this.habilitarBody()
-        
+        this.conectarConBD()
         this.atenderPeticiones() //atiendo las peticiones del usuario
     }
 
