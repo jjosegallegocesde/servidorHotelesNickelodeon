@@ -14,7 +14,7 @@ export class ControladorHabitacion{
         //Intento resolver la PETICION
         try{
            response.status(200).json({
-            mensaje:"exito en la consulta",
+            mensaje:"exito en la consulta jsjaj",
             datos:servicioHabitacion.buscarTodas()
            }) 
         }catch(error){ //FALLO RESOLVIENDO LA PETICION
