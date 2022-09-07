@@ -29,11 +29,11 @@ const Reserva =new Schema({
     },
     valorReserva:{
         type:Number,
-        required:true
+        required:false
     }
     
     
 })
 
-const modeloReserva=mongoose.model('reserva',Reserva)
+export const modeloReserva=mongoose.model('reserva',Reserva)
 

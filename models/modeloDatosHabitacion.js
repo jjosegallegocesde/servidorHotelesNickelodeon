@@ -19,7 +19,7 @@ const Habitacion=new Schema({
         required:true
     },
     imagenes:{
-        type:String,
+        type:[String],
         required:false
     },
     numeroPersonas:{

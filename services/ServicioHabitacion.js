@@ -6,7 +6,7 @@ export class ServicioHabitacion{
 
     async buscarTodas(){
         let habitaciones=await modeloHabitacion.find()
-        return habitaciones
+        return (habitaciones)
     }
 
     async buscarPorId(id){
