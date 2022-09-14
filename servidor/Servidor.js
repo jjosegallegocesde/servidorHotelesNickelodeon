@@ -7,6 +7,7 @@ import {rutas} from '../routes/rutas.js'
 //LLamamos al metodo conectar con BD
 import {conectar} from '../database/conexion.js'
 
+import cors from 'cors'
 
 export class Servidor{
 
@@ -23,6 +24,7 @@ export class Servidor{
 
     habilitarBody(){
         this.app.use(express.json())
+        this.app.use(cors())
     }
 
     encenderServidor(){
